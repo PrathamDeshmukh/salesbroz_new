@@ -16,7 +16,7 @@
     </div> -->
     <!--Loading End -->
 
- <!--?php include('header.php');?>-->
+ <?php include('header.php');?>
 
 
  <?php include ($page_name.'.php');?>
