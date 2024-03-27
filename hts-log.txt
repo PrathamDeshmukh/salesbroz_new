@@ -1,0 +1,25 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 27 Mar 2024 11:58:26 at https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/ -O1 "C:\My Web Sites\salesbroz" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:59:56	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo.bootstrapdash.com/skydash/themes/assets/images/auth/lockscreen-bg.jpg (from https://demo.bootstrapdash.com/skydash/themes/assets/css/vertical-layout-light/style.css)
+11:59:57	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/images/samples/300X300/12.jpg (from https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/ui-features/tabs.html)
+11:59:57	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/images/samples/300X300/10.jpg (from https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/ui-features/tabs.html)
+11:59:58	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo.bootstrapdash.com/skydash/themes/assets/images/carousel/banner_5.jpg (from https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/ui-features/carousel.html)
+12:00:01	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/vendors/inputmask/jquery.inputmask.bundle.js (from https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/forms/advanced_elements.html)
+12:00:01	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/forms/lib/codemirror.css (from https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/forms/code_editor.html)
+12:00:01	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/forms/lib/codemirror.js (from https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/forms/code_editor.html)
+12:00:02	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demo.bootstrapdash.com/skydash/themes/assets/images/samples/1280x768/3.jpg (from https://demo.bootstrapdash.com/skydash/themes/vertical-icon-menu/pages/apps/gallery.html)
+12:00:02	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/font/context-menu-icons.eot?33lxn (from https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/jquery.contextMenu.min.css)
+12:00:02	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/font/context-menu-icons.woff2?33lxn (from https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/jquery.contextMenu.min.css)
+12:00:02	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/font/context-menu-icons.woff?33lxn (from https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/jquery.contextMenu.min.css)
+12:00:02	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/font/context-menu-icons.ttf?33lxn (from https://demo.bootstrapdash.com/skydash/themes/assets/vendors/jquery-contextmenu/jquery.contextMenu.min.css)
+12:00:02	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/vendors/img/loading.gif (from https://demo.bootstrapdash.com/skydash/themes/assets/vendors/x-editable/bootstrap-editable.css)
+12:00:02	Error: 	"Not Found" (404) at link https://demo.bootstrapdash.com/skydash/themes/assets/vendors/img/clear.png (from https://demo.bootstrapdash.com/skydash/themes/assets/vendors/x-editable/bootstrap-editable.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 37 seconds : 348 links scanned, 333 files written (17542051 bytes overall) [8460303 bytes received at 87219 bytes/sec], 11633376 bytes transferred using HTTP compression in 264 files, ratio 20%, 49.7 requests per connection
+(11 errors, 3 warnings, 0 messages)
