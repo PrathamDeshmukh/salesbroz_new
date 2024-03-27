@@ -24,4 +24,18 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+	public function login()
+	{
+		$page_data['page_name'] = 'login';
+		$this->load->view('front/template', $page_data);
+
+	}
+	public function signup()
+	{
+		$page_data['page_name'] = 'signup';
+		$this->load->view('front/template', $page_data);
+
+	}
+
+	
 }
