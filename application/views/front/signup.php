@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php include('head.php');?>
+</head>
+<body>
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">
       <div class="content-wrapper d-flex align-items-center auth px-0">
@@ -45,7 +51,7 @@
                     UP</a>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
-                  Already have an account? <a href="<?php echo base_url();?>login" class="text-primary">Login</a>
+                  Already have an account? <a href="<?php base_url()?>login" class="text-primary">Login</a>
                 </div>
               </form>
             </div>
@@ -56,3 +62,6 @@
     </div>
     <!-- page-body-wrapper ends -->
   </div>
+  
+</body>
+</html>

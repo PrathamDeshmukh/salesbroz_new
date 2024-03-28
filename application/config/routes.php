@@ -56,4 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['home'] = 'welcome/home';
 $route['login'] = 'welcome/login';
 $route['signup'] = 'welcome/signup';
+
 $route['invoice'] = 'welcome/invoice';
+
+
