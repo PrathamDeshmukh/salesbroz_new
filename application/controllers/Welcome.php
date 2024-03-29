@@ -27,69 +27,43 @@ class Welcome extends CI_Controller {
     }
 	public function index()
 	{
-		$page_data['page_name'] = 'home';
-		$this->load->view('front/template', $page_data);
-
-	}
-	public function login()
-	{
 		$page_data['page_name'] = 'login';
 		$this->load->view('front/login.php', $page_data);
 
 	}
+	public function home()
+	{
+		
+        $page_data['page_name'] = 'home';
+		$this->load->view('front/template', $page_data);
 
+	}
     public function adminlogin(){
-        $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('phone', 'phone', 'required');
-        $this->form_validation->set_rules('password', 'Password', 'required');
-        $this->form_validation->set_error_delimiters('<div style="color: red;">', '</div>');
-        if ($this->form_validation->run()) {
             $username = $_POST['username'];
             $phone = $_POST['phone'];
             $password = $_POST['password'];
-           
-            $data = $this->CommonModal->getRowById('user', 'username', $username);
-            $data = $this->CommonModal->getRowById('user', 'phone', $phone);
-            if ($data) {
-
-                $id = $data[0]['id'];
-                $f_username = $data[0]['username'];
-                $phone = $data[0]['phone'];
-                $f_password = $data[0]['password'];
-
-                if ($password != $f_password) {
-                //     echo "error" ;
-                // exit();
-                $this->session->set_flashdata('msg', 'Your Password is Incorrect!!!!!!');
-				$this->session->set_flashdata('msg_class', 'alert-danger');
-				
-                } else {
-                    $this->session->set_userdata(array('id' => $id, 'username' => $username, 'phone' => $phone));
-                    redirect('welcome');
-                }
-            
-            } else {
+            $data = $this->CommonModal->login($username, $phone, $password);
+            if ($data) 
+            {
+                redirect('welcome/home');
+            }
+            else {
                 // echo "error" ;
                 // exit();
-                $this->session->set_flashdata('msg', 'Your Contact or  Username is Incorrect!!!!!!');
+                $this->session->set_flashdata('msg', 'Somethig Went Wrong Please Check !!!!!!');
 				$this->session->set_flashdata('msg_class', 'alert-danger');
+                redirect('welcome');
             }
         }
-        // $this->load->view('admin/login');
-        redirect('welcome/login');
-    }
+       
 
     public function logout()
     {
         $this->load->library('session');
         $this->session->unset_userdata('id');
-        redirect(base_url('welcome/login'));
-    }
-
-
-
-
-
+        redirect(base_url('welcome'));
+    } 
+    
 	public function signup()
 	{
 		$page_data['page_name'] = 'signup';

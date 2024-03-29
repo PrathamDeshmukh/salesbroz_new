@@ -292,7 +292,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>welcome">
+      <a class="nav-link" href="<?php echo base_url();?>home">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">Dashboard</span>
       </a>
@@ -322,7 +322,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>login">
+      <a class="nav-link" href="<?php echo base_url();?>welcome">
         <i class="icon-power menu-icon"></i>
         <span class="menu-title">Logout</span>
       </a>

@@ -30,15 +30,15 @@
               <form  action="<?php echo base_url('welcome/adminlogin'); ?>" method="post" class="pt-3">
                 <div class="form-group">
                   <input type="text" name="phone"class="form-control form-control-lg" id="exampleInputEmail1"
-                    placeholder="Contact Number">
+                    placeholder="Contact Number" required>
                 </div>
                 <div class="form-group">
                   <input type="text" name="username"class="form-control form-control-lg" id="exampleInputEmail1"
-                    placeholder="Username">
+                    placeholder="Username"required>
                 </div>
                 <div class="form-group">
                   <input type="password" name="password"class="form-control form-control-lg" id="exampleInputPassword1"
-                    placeholder="Password">
+                    placeholder="Password"required>
                 </div>
                 <div class="mt-3 d-grid gap-2">
                 <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Log In</button>
