@@ -16,7 +16,7 @@
                                   $msg_class = $this->session->flashdata('msg_class') ?>
                                   <div class="row">
                                 <div class="col-lg-6" >
-                                   <div class="alert  <?= $msg_class; ?>"style="width: 300px;"><?= $msg; ?></div>
+                                   <div class="alert  <?= $msg_class; ?>"style="width: 310px;"><?= $msg; ?></div>
                                </div>
                                      </div>
                                        <?php
@@ -25,8 +25,8 @@
               <div class="brand-logo">
                 <h1><b>SalesBroz..</b></h1>
               </div>
-              <h4>Hello! let's get started</h4>
-              <h6 class="font-weight-light">Sign in to continue.</h6>
+             
+              <h6 class="font-weight-light">Login to continue.</h6>
               <form  action="<?php echo base_url('welcome/adminlogin'); ?>" method="post" class="pt-3">
                 <div class="form-group">
                   <input type="text" name="phone"class="form-control form-control-lg" id="exampleInputEmail1"
@@ -42,9 +42,7 @@
                 </div>
                 <div class="mt-3 d-grid gap-2">
                 <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Log In</button>
-                  <!-- <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                    href="../../index-2.html">SIGN
-                    IN</a> -->
+                  
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
