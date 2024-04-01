@@ -8,32 +8,41 @@
     <div class="container-fluid page-body-wrapper full-page-wrapper">
       <div class="content-wrapper d-flex align-items-center auth px-0">
         <div class="row w-100 mx-0">
+        
       
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+            <?php if ($msg = $this->session->flashdata('msg')):
+                                  $msg_class = $this->session->flashdata('msg_class') ?>
+                                  <div class="row">
+                                <div class="col-lg-6" >
+                                   <div class="alert  <?= $msg_class; ?>"style="width: 310px;"><?= $msg; ?></div>
+                               </div>
+                                     </div>
+                                       <?php
+                                        $this->session->unset_userdata('msg');
+                                       endif; ?>
               <div class="brand-logo">
-                <img src="https://demo.bootstrapdash.com/skydash/themes/assets/images/logo.svg" alt="logo">
+                <h1><b>SalesBroz..</b></h1>
               </div>
-              <h4>Hello! let's get started</h4>
-              <h6 class="font-weight-light">Sign in to continue.</h6>
-              <form  action="#" method="post" class="pt-3">
+             
+              <h6 class="font-weight-light">Login to continue.</h6>
+              <form  action="<?php echo base_url('welcome/adminlogin'); ?>" method="post" class="pt-3">
                 <div class="form-group">
                   <input type="text" name="phone"class="form-control form-control-lg" id="exampleInputEmail1"
-                    placeholder="Contact Number">
+                    placeholder="Contact Number" required>
                 </div>
                 <div class="form-group">
                   <input type="text" name="username"class="form-control form-control-lg" id="exampleInputEmail1"
-                    placeholder="Username">
+                    placeholder="Username"required>
                 </div>
                 <div class="form-group">
                   <input type="password" name="password"class="form-control form-control-lg" id="exampleInputPassword1"
-                    placeholder="Password">
+                    placeholder="Password"required>
                 </div>
                 <div class="mt-3 d-grid gap-2">
                 <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Log In</button>
-                  <!-- <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                    href="../../index-2.html">SIGN
-                    IN</a> -->
+                  
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
