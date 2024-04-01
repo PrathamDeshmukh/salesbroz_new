@@ -98,9 +98,10 @@
                 <div class="card-body">
                 <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
-                      <img src="assets/images/icon/setting.png" style="height: 50px; width: 50px;">
-                        <li class="breadcrumb-item"><a href="#"><h4>CREATE PURCHASE INVOICE</h4></a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <img src="assets/images/icon/setting.png" style="height: 50px; width: 50px; padding-right: 5px;">
+                        <li class="breadcrumb-item"><a href="#"><h4 style="padding-top: 15px;">CREATE PURCHASE INVOICE</h4></a></li>
+                        <p>Create your digital purchase invoice on MyDukan by uploading a copy<br> of your handwritten invoice</p>
+                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block">View More  ></button>
                       </ol>
                     </nav>
                     
@@ -114,9 +115,10 @@
                 <div class="card-body">
                 <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
-                      <img src="assets/images/icon/laptop.png" style="height: 50px; width: 50px;">
-                        <li class="breadcrumb-item"><a href="#"><h4>CREATE SALE INVOICE</h4></a></li>
-                        <li class="breadcrumb-item"><a href="#"></a></li>
+                      <img src="assets/images/icon/laptop.png" style="height: 50px; width: 50px; padding-right: 5px;">
+                        <li class="breadcrumb-item"><a href="#"><h4 style="padding-top: 15px;">CREATE SALE INVOICE</h4></a></li>
+                        <li>Create your digital sales invoice on MyDukan and track paid and pending<br> payment statuses with ease</li>
+                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block">View More  ></button>
                       </ol>
                     </nav>
                    
@@ -126,6 +128,52 @@
               
             </div>
                 </div>
+
+                <div class="row">
+            <div class="col-md-6 stretch-card grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <p class="ps-0 pb-2 border-bottom">Latest Purchase Invoice</p>
+                  <p class="card-title mb-0" style="text-align: center; padding-bottom: 15px; background-color: pink; padding-top: 15px;">CREATE PURCHASE INVOICE</p>
+                  <div class="table-responsive">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th class="ps-0  pb-2 border-bottom">Invoice No</th>
+                          <th class="border-bottom pb-2">Invoice Date</th>
+                          <th class="border-bottom pb-2">Brands</th>
+                          <th class="border-bottom pb-2">Invoice Url</th>
+                        </tr>
+                      </thead>
+        
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-6 stretch-card grid-margin">
+              <div class="card">
+                <div class="card-body">
+                <p class="ps-0 pb-2 border-bottom">Latest Sale Invoice</p>
+                  <p class="card-title mb-0" style="text-align: center; padding-bottom: 15px; background-color: pink; padding-top: 15px;">CREATE SALE INVOICE</p>
+                  <div class="table-responsive">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th class="ps-0  pb-2 border-bottom">Invoice No</th>
+                          <th class="border-bottom pb-2">Invoice Date</th>
+                          <th class="border-bottom pb-2">Products</th>
+                          <th class="border-bottom pb-2">Invoice Url</th>
+                        </tr>
+                      </thead>
+        
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
 
 
 
