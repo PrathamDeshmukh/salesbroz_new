@@ -298,39 +298,71 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>invoice">
-        <i class="icon-grid menu-icon"></i>
-        <span class="menu-title">Invoice Dashboard</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>invoice">
-        <i class="icon-bag menu-icon"></i>
-        <span class="menu-title">Sales Invoice </span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>invoice">
-        <i class="icon-bag menu-icon"></i>
-        <span class="menu-title">PurchaseInvoice </span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>invoice">
+      <a class="nav-link" href="<?php echo base_url();?>">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Sales</span>
       </a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<?php echo base_url();?>">
+        <i class="icon-grid menu-icon"></i>
+        <span class="menu-title">My Purchase</span>
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
+        aria-controls="form-elements">
+        <i class="icon-align-right menu-icon"></i>
+        <span class="menu-title">My Invoice</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="form-elements">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>invoice">Invoice Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="../forms/advanced_elements.html">Sales invoice</a></li>
+          <li class="nav-item"><a class="nav-link" href="../forms/validation.html">Purchase Invoice</a></li>
+          <li class="nav-item"><a class="nav-link" href="../forms/wizard.html">Invoice Settings</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
+        <i class="icon-book menu-icon"></i>
+        <span class="menu-title">My Rrturns</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="editors">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"><a class="nav-link" href="../forms/text_editor.html">Sales Return</a></li>
+          <li class="nav-item"><a class="nav-link" href="../forms/code_editor.html">Purchase Retun</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+        <i class="icon-bar-graph menu-icon"></i>
+        <span class="menu-title">Stocks MGMT</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="charts">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="../charts/chartjs.html">My Stock</a></li>
+          <li class="nav-item"> <a class="nav-link" href="../charts/morris.html">Stock Audit</a></li>
+          <li class="nav-item"> <a class="nav-link" href="../charts/flot-chart.html">Add Your Models</a></li>
+         
+        </ul>
+      </div>
+    </li>
+   
+   
+    
     <li class="nav-item">
       <a class="nav-link" href="<?php echo base_url();?>welcome">
         <i class="icon-power menu-icon"></i>
         <span class="menu-title">Logout</span>
       </a>
     </li>
-   
-  
-    
-    
    
   </ul>
 </nav>
