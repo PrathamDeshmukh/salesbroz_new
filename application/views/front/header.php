@@ -298,13 +298,13 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>">
+      <a class="nav-link" href="#form-elements">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Sales</span>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>">
+      <a class="nav-link" href="<?php echo base_url();?>#form-elements">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Purchase</span>
       </a>
