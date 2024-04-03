@@ -320,8 +320,8 @@
       <div class="collapse" id="form-elements">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>invoice">Invoice Dashboard</a></li>
-          <li class="nav-item"><a class="nav-link" href="../forms/advanced_elements.html">Sales invoice</a></li>
-          <li class="nav-item"><a class="nav-link" href="../forms/validation.html">Purchase Invoice</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>sale_invoice">Sales invoice</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>purchase_invoice">Purchase Invoice</a></li>
           <li class="nav-item"><a class="nav-link" href="../forms/wizard.html">Invoice Settings</a></li>
         </ul>
       </div>

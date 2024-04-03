@@ -131,6 +131,18 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+    public function sale_invoice()
+	{
+		$page_data['page_name'] = 'sale_invoice';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function purchase_invoice()
+	{
+		$page_data['page_name'] = 'purchase_invoice';
+		$this->load->view('front/template', $page_data);
+
+	}
 
 
 	

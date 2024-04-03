@@ -58,5 +58,7 @@ $route['login'] = 'welcome/login';
 $route['signup'] = 'welcome/signup';
 
 $route['invoice'] = 'welcome/invoice';
+$route['sale_invoice'] = 'welcome/sale_invoice';
+$route['purchase_invoice'] = 'welcome/purchase_invoice';
 
 
