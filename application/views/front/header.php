@@ -304,7 +304,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="<?php echo base_url();?>">
+      <a class="nav-link"href="<?php echo base_url();?>my_purchase">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Purchase</span>
       </a>

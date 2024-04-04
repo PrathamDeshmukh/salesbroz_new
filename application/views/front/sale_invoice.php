@@ -7,6 +7,7 @@
     <button type="button" class="btn btn-primary float-end">Download</button>
 </div>
 </div>
+<div class="">
 <div class="main-panel">
         <div class="content-wrapper">
           <div class="card" style="position: absolute;">
@@ -71,6 +72,7 @@
             </div>
           </div>
         </div>
+</div>
 </div>
 </div>
 </div>
