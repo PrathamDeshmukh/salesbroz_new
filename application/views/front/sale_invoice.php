@@ -1,23 +1,70 @@
-<div class="content-wrapper">
-    <div class="row">
-<div style="display: flex; gap: 30px;">
-    <h2>All Sale Invoices</h2>
-    <input name="tags" id="tags" value="Arvind" style="height: 35px; width: 500px; margin-top: 3px;"/>
-    <button type="button" class="btn btn-primary float-end">Filter</button>
-    <button type="button" class="btn btn-primary float-end">Download</button>
-</div>
-</div>
-<div class="main-panel">
+
+
+
+
+
+    <!--main panel-->
+    <div class="main-panel">
         <div class="content-wrapper">
-          <div class="card" style="position: absolute;">
-            <div class="card-body">
-                <div class="content-wrapper" style="display: flex; gap: 30px;">
-              <input type="text" class="form-control" placeholder="Search invoice by Number,Customer and more" value="" style="height: 15px; width: 500px;">   
-              <button type="button" class="btn btn-link btn-fw">Pending Payment Invoices</button>
-              <button type="button" class="btn btn-link btn-fw">+ New Invoices</button>   
-                </div>                   
+        <div class="row">
+          <div class="col-md-12 grid-margin transparent">
               <div class="row">
-                <div class="col-12">
+                <div class="col-md-5 mb-4  transparent">
+                  <h2 class="font-weight-bold">All Sale Invoices</h2>
+                </div>
+                
+
+                <div class="col-md-7 mb-2 ml-2 transparent">
+                <div class="row">
+                    <div class="col-md-6 mb-4  stretch-card transparent">
+                    <input  type="text" class="form-control p-2" name="tags" id="tags" value="Arvind" />
+                    </div>
+                    <div class="col-md-2 mb-4 stretch-card transparent">
+                    <button type="button" class="btn btn-primary float-end">Filter</button>
+                    </div>
+                    <div class="col-md-2 mb-4 stretch-card transparent">
+                      <button type="button" class="btn btn-primary float-end">Download</button>
+                    </div>
+                  </div>
+                  <!-- <input  type="text" class="form-control" name="tags" id="tags" value="Arvind" />
+                </div>
+                <div class="col-md-2 mb-1  justify-content-end transparent">
+                  <button type="button" class="btn btn-primary float-end">Filter</button>
+                </div>
+                <div class="col-md-2 mb-1 justify-content-end transparent">
+                  <button type="button" class="btn btn-primary float-end">Download</button> -->
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+           
+            <div class="col-md-12 grid-margin transparent">
+              <div class="card ">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6 mb-4 stretch-card transparent">
+                      <input type="text" class="form-control p-2" placeholder="Search invoice by Number,Customer and more" value="" >
+                    </div>
+                    <div class="col-md-3 mb-4 stretch-card transparent">
+                      <button type="button" class="btn btn-link btn-fw">Pending Payment Invoices</button>
+                     
+                    </div>
+                    <div class="col-md-3 mb-4 stretch-card transparent">
+                      
+                      <button type="button" class="btn btn-link btn-fw">+ New Invoices</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                
                   <div class="table-responsive">
                     <table class="table table-striped table-borderless">
                     
@@ -36,15 +83,19 @@
                         </tr>
                       </thead>
                       <tbody>
+                      <?php $customer = getAllRow('customer');
+                                                               if (!empty($customer)) {
+                                                      foreach ($customer as $customer_info) {
+                                                                   ?>
                         <tr>
-                          <td>2024/04/01</td>
-                          <td>AIF11025</td>
-                          <td>Paid</td>
-                          <td>Rohan mishra</td>
-                          <td>8594672598</td>
-                          <td>₹ 2500</td>
-                          <td> - </td>
-                          <td>CASH</td>
+                          <td><?=$customer_info['date']?></td>
+                          <td><?=$customer_info['invoice_no']?></td>
+                          <td><?=$customer_info['c_paid']?></td>
+                          <td><?=$customer_info['c_name']?></td>
+                          <td><?=$customer_info['c_phone']?></td>
+                          <td><?=$customer_info['c_amount']?></td>
+                          <td> <?=$customer_info['pending_amount']?></td>
+                          <td><?=$customer_info['pay_mode']?></td>
                           <td>
                           <button class="btn btn-outline-primary">ViewUpdate<br>Payments</button>
                           </td>
@@ -52,6 +103,8 @@
                             <button class="btn btn-outline-primary">View Products</button>
                           </td>
                         </tr>
+                        <?php } 
+                                                             } ?>
                         
                       </tbody>
                       
