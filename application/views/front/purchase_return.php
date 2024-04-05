@@ -80,20 +80,20 @@
                         </tr>
                       </thead>
                       <tbody>
-                      <?php $vendor = getAllRow('vendor');
-                                                               if (!empty($vendor)) {
-                                                      foreach ($vendor as $vendor_info) {
+                      <?php $purchase_invoice = getAllRow('purchase_invoice');
+                                                               if (!empty($purchase_invoice)) {
+                                                      foreach ($purchase_invoice as $purchase_invoice) {
                                                                    ?>
                         <tr>
-                          <td><?=$vendor_info['date']?></td>
-                          <td><?=$vendor_info['bill_no']?></td>
+                          <td><?=$purchase_invoice['date']?></td>
+                          <td><?=$purchase_invoice['bill_no']?></td>
                           
-                          <td><?=$vendor_info['v_name']?></td>
-                          <td><?=$vendor_info['v_phone']?></td>
-                          <td><?=$vendor_info['paid']?></td>
-                          <td><?=$vendor_info['v_amount']?></td>
-                          <td> <?=$vendor_info['pending_amount']?></td>
-                          <td><?=$vendor_info['pay_mode']?></td>
+                          <td><?=$purchase_invoice['v_name']?></td>
+                          <td><?=$purchase_invoice['v_phone']?></td>
+                          <td><?=$purchase_invoice['paid']?></td>
+                          <td><?=$purchase_invoice['v_amount']?></td>
+                          <td> <?=$purchase_invoice['pending_amount']?></td>
+                          <td><?=$purchase_invoice['pay_mode']?></td>
                           <td>
                           <button class="btn btn-outline-primary">ViewUpdate<br>Payments</button>
                           </td>
