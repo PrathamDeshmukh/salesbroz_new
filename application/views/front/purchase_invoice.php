@@ -1,26 +1,59 @@
-<div class="content-wrapper">
-    <div class="row">
-<div style="display: flex; gap: 30px;">
-    <h2>All Purchase Invoices</h2>
-    <input name="tags" id="tags" value="Arvind" style="height: 35px; width: 500px; margin-top: 3px;"/>
-    <button type="button" class="btn btn-primary float-end">Filters</button>
-    <button type="button" class="btn btn-primary float-end">Download</button>
-</div>
-</div>
-<div class="main-panel">
+
+
+
+
+
+    <!--main panel-->
+    <div class="main-panel">
         <div class="content-wrapper">
-          <div class="card" style="position: absolute;">
-            <div class="card-body">
-                <div class="content-wrapper" style="display: flex; gap: 30px;">
-              <input type="text" class="form-control" placeholder="Search invoice by Number,Distributor and more" value="" style="height: 15px; width: 500px;">   
-              <button type="button" class="btn btn-link btn-fw">Pending Payment Invoices</button>
-              <button type="button" class="btn btn-link btn-fw">+ New Purchase Invoice</button>   
-                </div>                   
+          <div class="row">
+            <div class="col-md-12 grid-margin">
               <div class="row">
-                <div class="col-12">
+              <div class="col-12">
+                <div class="d-flex justify-content-between" >
+                <h2>All Purchase Invoices</h2>
+                <div id="right-sidebar  " class="d-flex justify-content-between" style="gap: 20px;">
+                <input name="tags" id="tags" value="Arvind" />
+                <button type="button" class="btn btn-primary float-end">Filter</button>
+                <button type="button" class="btn btn-primary float-end">Download</button>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+           
+            <div class="col-md-12 grid-margin transparent">
+              <div class="row">
+                <div class="col-md-12 mb-4 stretch-card transparent">
+                  <div class="card ">
+                    <div class="card-body">
+                    <div class="d-flex justify-content-between" >
+                      <input type="text" class="form-control" placeholder="Search invoice by Number,Customer and more" value="" style="height: 15px; width: 500px;">
+                      <button type="button" class="btn btn-link btn-fw">Pending Payment Invoices</button>
+                      <button type="button" class="btn btn-link btn-fw">+ New Purchase Invoices</button>
+                    </div>
+               
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+             
+            </div>
+          </div>
+         
+         
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                
                   <div class="table-responsive">
-                    <table id="order-listing" class="table">
-                      <thead>
+                    <table class="table table-striped table-borderless">
+                    
+                    <thead>
                         <tr>
                           <th>Date</th>
                           <th>Bill No.</th>
@@ -34,6 +67,14 @@
                           <th>Products</th>
                         </tr>
                       </thead>    
+                      <tbody>
+                        <tr>
+                         
+                        </tr>
+                        
+                      </tbody>
+                      
+                    
                     </table>
                     <button type="button" class="btn btn-link btn-fw">+ Click here to add</button>   
                     <nav>
@@ -50,11 +91,21 @@
                 </div>
               </div>
             </div>
+            
           </div>
-        </div>
-</div>
-</div>
-</div>
-</div>
+          
+          </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+</body>
 
+
+
+
+
+
+        </div>
 
