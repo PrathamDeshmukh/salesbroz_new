@@ -126,7 +126,7 @@
     </div>
   </div>
 </div>
-<div id="right-sidebar" class="settings-panel">
+<!--div id="right-sidebar" class="settings-panel">
   <i class="settings-close ti-close"></i>
   <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
     <li class="nav-item">
@@ -215,9 +215,9 @@
         <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
         <p class="text-gray mb-0 ">Call Sarah Graves</p>
       </div>
-    </div>
+    </div-->
     <!-- To do section tab ends -->
-    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+    <!--div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
       <div class="d-flex align-items-center justify-content-between border-bottom">
         <p class="settings-heading border-top-0 mb-3 ps-3 pt-0 border-bottom-0 pb-0">Friends</p>
         <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See
@@ -283,10 +283,10 @@
         </li>
       </ul>
     </div>
-    <!-- chat tab ends -->
+    
   </div>
-</div>
-
+</div-->
+<!-- chat tab ends -->
 <!-- partial -->
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
