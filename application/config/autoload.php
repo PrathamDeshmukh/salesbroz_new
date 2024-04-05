@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'file','email','form','date','directory','captcha');
+$autoload['helper'] = array('url', 'file','email','form','date','directory','captcha','common_helper');
 
 /*
 | -------------------------------------------------------------------
