@@ -143,6 +143,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+    public function my_purchase()
+	{
+		$page_data['page_name'] = 'my_purchase';
+		$this->load->view('front/template', $page_data);
+
+	}
 
 
 	
