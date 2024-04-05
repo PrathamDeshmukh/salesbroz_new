@@ -7,7 +7,7 @@
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Welcome John</h3>
+                  <h3 class="font-weight-bold">Welcome </h3>
                   <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span
                       class="text-primary">3
                       unread alerts!</span></h6>
@@ -120,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <!--div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card position-relative">
                 <div class="card-body">
@@ -133,7 +133,7 @@
                           <div class="col-md-12 col-xl-3 d-flex flex-column justify-content-start">
                             <div class="ml-xl-4 mt-3">
                               <p class="card-title">Detailed Reports</p>
-                              <h1 class="text-primary">$34040</h1>
+                              <h1 class="text-primary">₹34040</h1>
                               <h3 class="font-weight-500 mb-xl-4 text-primary">North America</h3>
                               <p class="mb-2 mb-xl-0">The total number of sessions within the date range. It is the
                                 period time a user is actively engaged with your website, page or app, etc</p>
@@ -234,7 +234,7 @@
                           <div class="col-md-12 col-xl-3 d-flex flex-column justify-content-start">
                             <div class="ml-xl-4 mt-3">
                               <p class="card-title">Detailed Reports</p>
-                              <h1 class="text-primary">$34040</h1>
+                              <h1 class="text-primary">₹34040</h1>
                               <h3 class="font-weight-500 mb-xl-4 text-primary">North America</h3>
                               <p class="mb-2 mb-xl-0">The total number of sessions within the date range. It is the
                                 period time a user is actively engaged with your website, page or app, etc</p>
@@ -360,7 +360,7 @@
                       <tbody>
                         <tr>
                           <td>Search Engine Marketing</td>
-                          <td class="font-weight-bold">$362</td>
+                          <td class="font-weight-bold">₹362</td>
                           <td>21 Sep 2018</td>
                           <td class="font-weight-medium">
                             <div class="badge badge-success">Completed</div>
@@ -368,7 +368,7 @@
                         </tr>
                         <tr>
                           <td>Search Engine Optimization</td>
-                          <td class="font-weight-bold">$116</td>
+                          <td class="font-weight-bold">₹116</td>
                           <td>13 Jun 2018</td>
                           <td class="font-weight-medium">
                             <div class="badge badge-success">Completed</div>
@@ -376,7 +376,7 @@
                         </tr>
                         <tr>
                           <td>Display Advertising</td>
-                          <td class="font-weight-bold">$551</td>
+                          <td class="font-weight-bold">₹551</td>
                           <td>28 Sep 2018</td>
                           <td class="font-weight-medium">
                             <div class="badge badge-warning">Pending</div>
@@ -384,7 +384,7 @@
                         </tr>
                         <tr>
                           <td>Pay Per Click Advertising</td>
-                          <td class="font-weight-bold">$523</td>
+                          <td class="font-weight-bold">₹523</td>
                           <td>30 Jun 2018</td>
                           <td class="font-weight-medium">
                             <div class="badge badge-warning">Pending</div>
@@ -392,7 +392,7 @@
                         </tr>
                         <tr>
                           <td>E-Mail Marketing</td>
-                          <td class="font-weight-bold">$781</td>
+                          <td class="font-weight-bold">₹781</td>
                           <td>01 Nov 2018</td>
                           <td class="font-weight-medium">
                             <div class="badge badge-danger">Cancelled</div>
@@ -400,7 +400,7 @@
                         </tr>
                         <tr>
                           <td>Referral Marketing</td>
-                          <td class="font-weight-bold">$283</td>
+                          <td class="font-weight-bold">₹283</td>
                           <td>20 Mar 2018</td>
                           <td class="font-weight-medium">
                             <div class="badge badge-warning">Pending</div>
@@ -408,7 +408,7 @@
                         </tr>
                         <tr>
                           <td>Social media marketing</td>
-                          <td class="font-weight-bold">$897</td>
+                          <td class="font-weight-bold">₹897</td>
                           <td>26 Oct 2018</td>
                           <td class="font-weight-medium">
                             <div class="badge badge-success">Completed</div>
@@ -680,7 +680,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div-->
           <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
