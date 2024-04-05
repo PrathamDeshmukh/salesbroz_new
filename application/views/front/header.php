@@ -362,8 +362,8 @@
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="#">My Customers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">My Distributors</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>my_customer">My Customers</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>my_distributor">My Distributors</a></li>
         </ul>
       </div>
     </li>

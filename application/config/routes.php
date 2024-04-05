@@ -64,6 +64,8 @@ $route['my_purchase'] = 'welcome/my_purchase';
 $route['my_sales'] = 'welcome/my_sales';
 $route['sales_return'] = 'welcome/sales_return';
 $route['purchase_return'] = 'welcome/purchase_return';
+$route['my_customer'] = 'welcome/my_customer';
+$route['my_distributor'] = 'welcome/my_distributor';
 
 
 
