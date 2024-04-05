@@ -14657,8 +14657,8 @@ textarea.is-invalid.tt-hint, .select2-container--default .select2-selection--sin
   --bs-popover-header-font-size: 1rem;
   --bs-popover-header-color: inherit;
   --bs-popover-header-bg: var(--bs-secondary-bg);
-  --bs-popover-body-padding-x: 1rem;
-  --bs-popover-body-padding-y: 1rem;
+  --bs-popover-body-padding-x: 3rem;
+  --bs-popover-body-padding-y: 2rem;
   --bs-popover-body-color: var(--bs-body-color);
   --bs-popover-arrow-width: 1rem;
   --bs-popover-arrow-height: 0.5rem;
@@ -21094,7 +21094,7 @@ h6,
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.3rem;
 }
@@ -25386,7 +25386,7 @@ dl li {
 
 /* Popovers */
 .popover-static-demo .popover {
-  width: 185px;
+  width: 280px;
   position: relative;
   display: block;
   float: left;
@@ -25431,7 +25431,7 @@ dl li {
   border-left-color: var(--bs-body-bg);
 }
 .popover .popover-header {
-  font-size: 0.9375rem;
+  font-size: 1.3rem;
   border-bottom: 0;
   background: #ffffff;
   color: inherit;
