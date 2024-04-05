@@ -59,33 +59,22 @@
                         </tr>
                       </thead>
                       <tbody>
-                      <?php $customer = getAllRow('customer');
-                                                               if (!empty($customer)) {
-                                                      foreach ($customer as $customer_info) {
-                                                                   ?>
-                        <tr>
-                          <td><?=$customer_info['date']?></td>
-                          <td><?=$customer_info['invoice_no']?></td>
-                          <td><?=$customer_info['c_paid']?></td>
-                          <td><?=$customer_info['c_name']?></td>
-                          <td><?=$customer_info['c_phone']?></td>
-                          <td><?=$customer_info['c_amount']?></td>
-                          <td> <?=$customer_info['pending_amount']?></td>
-                          <td><?=$customer_info['pay_mode']?></td>
-                          <td>
-                          <button class="btn btn-outline-primary">ViewUpdate<br>Payments</button>
-                          </td>
-                          <td>
-                            <button class="btn btn-outline-primary">View Products</button>
+                      <tr>
+                          <td>John Doe</td>
+                          <td>845697235</td>
+                          <td>Individual</td>
+                          <td>New York</td>
+                          <td>Apple</td>
+                          
+                          <td><a href="#"><i class="fa fa-edit"></i>
+                          <button class="btn btn-primary">Action</button>
                           </td>
                         </tr>
-                        <?php } 
-                                                             } ?>
-                        
+
                       </tbody>
                       
                     
-                    </table>
+                    </table><br>
                     
                     <nav>
                     <ul class="pagination flex-wrap">
