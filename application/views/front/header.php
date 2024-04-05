@@ -298,7 +298,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#form-elements">
+      <a class="nav-link" href="<?php echo base_url();?>my_sales">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Sales</span>
       </a>
@@ -329,13 +329,13 @@
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
         <i class="icon-book menu-icon"></i>
-        <span class="menu-title">My Rrturns</span>
+        <span class="menu-title">My Returns</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="editors">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="../forms/text_editor.html">Sales Return</a></li>
-          <li class="nav-item"><a class="nav-link" href="../forms/code_editor.html">Purchase Retun</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>sales_return">Sales Return</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>purchase_return">Purchase Retun</a></li>
         </ul>
       </div>
     </li>
@@ -351,6 +351,19 @@
           <li class="nav-item"> <a class="nav-link" href="../charts/morris.html">Stock Audit</a></li>
           <li class="nav-item"> <a class="nav-link" href="../charts/flot-chart.html">Add Your Models</a></li>
          
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="editors">
+        <i class="icon-book menu-icon"></i>
+        <span class="menu-title">Customer Relation</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-basic">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"><a class="nav-link" href="#">My Customers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">My Distributors</a></li>
         </ul>
       </div>
     </li>

@@ -61,5 +61,10 @@ $route['invoice'] = 'welcome/invoice';
 $route['sale_invoice'] = 'welcome/sale_invoice';
 $route['purchase_invoice'] = 'welcome/purchase_invoice';
 $route['my_purchase'] = 'welcome/my_purchase';
+$route['my_sales'] = 'welcome/my_sales';
+$route['sales_return'] = 'welcome/sales_return';
+$route['purchase_return'] = 'welcome/purchase_return';
+
+
 
 

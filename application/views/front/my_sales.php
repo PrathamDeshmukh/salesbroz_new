@@ -62,15 +62,15 @@
                     <div class="col-md-6 mb-4 justify-content-end stretch-card transparent ">
                     <nav>
                     <ul class="pagination flex-wrap">
-                      <li class="page-item active"><a class="page-link" href="#">2024</a></li>
-                      <li class="page-item"><a class="page-link" href="#">March</a></li>
+                      <li class="page-item "><a class="page-link" href="#">2024</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">March</a></li>
                       <li class="page-item"><a class="page-link" href="#">This Week</a></li>
                       <li class="page-item"><a class="page-link" href="#">Today</a></li>
                     </ul>
                   </nav>
                     </div><div class="row">
                     <div class="col-md-6 mb-4 stretch-card transparent">
-                    <h6>Showing Purchases Data till <b>Mar 1,2024 - Mar 31,2024</b>(ARVIND)</h6>
+                    <h6>Showing Sales Data (ARVIND)</h6>
                     </div>
                     <div class="col-md-6 mb-4 justify-content-end stretch-card transparent ">
                     <button type="button" class="btn btn-primary float-end">Export to Excel</button>
