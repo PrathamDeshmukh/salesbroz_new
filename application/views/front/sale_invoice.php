@@ -6,13 +6,34 @@
     <!--main panel-->
     <div class="main-panel">
         <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">All Sale Invoices</h3>
+                  
+                </div>
+                <div class="col-12 col-xl-4">
+                  <div class="justify-content-end d-flex">
+                    <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <input name="tags" id="tags" value="Arvind" />
+                    <button type="button" class="btn btn-primary float-end">Filter</button>
+                    <button type="button" class="btn btn-primary float-end">Download</button>
+                
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-12 grid-margin">
               <div class="row">
-              <div class="col-12">
+              <div class="col-md-12 grid-margin stretch-card">
                 <div class="d-flex justify-content-between" >
                 <h2>All Sale Invoices</h2>
-                <div id="right-sidebar  " class="d-flex justify-content-between" style="gap: 20px;">
+                <div id="right-sidebar  " >
                 <input name="tags" id="tags" value="Arvind" />
                 <button type="button" class="btn btn-primary float-end">Filter</button>
                 <button type="button" class="btn btn-primary float-end">Download</button>
