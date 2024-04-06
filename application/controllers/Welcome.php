@@ -182,6 +182,36 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+    public function my_sales()
+	{
+		$page_data['page_name'] = 'my_sales';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function sales_return()
+	{
+		$page_data['page_name'] = 'sales_return';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function purchase_return()
+	{
+		$page_data['page_name'] = 'purchase_return';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function my_customer()
+	{
+		$page_data['page_name'] = 'my_customer';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function my_distributor()
+	{
+		$page_data['page_name'] = 'my_distributor';
+		$this->load->view('front/template', $page_data);
+
+	}
 
 
 	

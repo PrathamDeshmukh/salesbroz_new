@@ -1,10 +1,10 @@
  <!-- partial:partials/_navbar.html -->
  <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-    <a class="navbar-brand brand-logo me-5" href=""><img src="/assets/images/logo.svg" class="me-2"
-        alt="logo" /></a>
-    <a class="navbar-brand brand-logo-mini" href=""><img src="/assets/images/logo-mini.svg"
-        alt="logo" /></a>
+    <a class="navbar-brand brand-logo me-5" href=""><img src="/assets/images/SalesBroz.png" class="me-2"
+        alt="SalesBroz" /></a>
+    <a class="navbar-brand brand-logo-mini" href=""><img src="/assets/images/SalesBroz.png"
+        alt="logoo" /></a>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -126,7 +126,7 @@
     </div>
   </div>
 </div>
-<div id="right-sidebar" class="settings-panel">
+<!--div id="right-sidebar" class="settings-panel">
   <i class="settings-close ti-close"></i>
   <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
     <li class="nav-item">
@@ -215,9 +215,9 @@
         <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
         <p class="text-gray mb-0 ">Call Sarah Graves</p>
       </div>
-    </div>
+    </div-->
     <!-- To do section tab ends -->
-    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+    <!--div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
       <div class="d-flex align-items-center justify-content-between border-bottom">
         <p class="settings-heading border-top-0 mb-3 ps-3 pt-0 border-bottom-0 pb-0">Friends</p>
         <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See
@@ -283,10 +283,10 @@
         </li>
       </ul>
     </div>
-    <!-- chat tab ends -->
+    
   </div>
-</div>
-
+</div-->
+<!-- chat tab ends -->
 <!-- partial -->
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -298,7 +298,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#form-elements">
+      <a class="nav-link" href="<?php echo base_url();?>my_sales">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Sales</span>
       </a>
@@ -329,13 +329,13 @@
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
         <i class="icon-book menu-icon"></i>
-        <span class="menu-title">My Rrturns</span>
+        <span class="menu-title">My Returns</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="editors">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="../forms/text_editor.html">Sales Return</a></li>
-          <li class="nav-item"><a class="nav-link" href="../forms/code_editor.html">Purchase Retun</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>sales_return">Sales Return</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>purchase_return">Purchase Retun</a></li>
         </ul>
       </div>
     </li>
@@ -351,6 +351,19 @@
           <li class="nav-item"> <a class="nav-link" href="../charts/morris.html">Stock Audit</a></li>
           <li class="nav-item"> <a class="nav-link" href="../charts/flot-chart.html">Add Your Models</a></li>
          
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="editors">
+        <i class="icon-book menu-icon"></i>
+        <span class="menu-title">Customer Relation</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-basic">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>my_customer">My Customers</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>my_distributor">My Distributors</a></li>
         </ul>
       </div>
     </li>
