@@ -105,7 +105,7 @@
                      </thead>
        
                    </table><br>
-                   <h5>No eligible products. Add Stocks/Sales to view calculations</h5>
+                   <h5>No eligible products.<a href="url">Add Stocks/Sales</a> to view calculations</h5>
                  </div>
                </div>
              </div>
@@ -127,7 +127,9 @@
                        </tr>
                      </thead>
        
-                   </table>
+                   </table><br>
+                   <h5>No eligible products.<a href="url"> Add Stocks/Sales</a> to view calculations</h5>
+
                  </div>
                </div>
              </div>
