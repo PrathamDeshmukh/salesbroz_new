@@ -1,9 +1,9 @@
  <!-- partial:partials/_navbar.html -->
  <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-    <a class="navbar-brand brand-logo me-5" href=""><img src="/assets/images/SalesBroz.png" class="me-2"
+    <a class="navbar-brand brand-logo me-5" href=""><img src="<?= base_url() ?>/assets/images/SalesBroz.png" class="me-2"
         alt="SalesBroz" /></a>
-    <a class="navbar-brand brand-logo-mini" href=""><img src="/assets/images/SalesBroz.png"
+    <a class="navbar-brand brand-logo-mini" href=""><img src="<?= base_url() ?>/assets/images/SalesBroz1.png"
         alt="logoo" /></a>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -75,7 +75,7 @@
       </li>
       <li class="nav-item nav-profile dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-          <img src="../assets/images/faces/face28.jpg" alt="profile" />
+          <img src="<?= base_url() ?>/assets/images/faces/face28.jpg" alt="profile" />
         </a>
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
           <a class="dropdown-item">
@@ -322,7 +322,7 @@
           <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>invoice">Invoice Dashboard</a></li>
           <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>sale_invoice">Sales invoice</a></li>
           <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>purchase_invoice">Purchase Invoice</a></li>
-          <li class="nav-item"><a class="nav-link" href="../forms/wizard.html">Invoice Settings</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>invoice_setting">Invoice Settings</a></li>
         </ul>
       </div>
     </li>

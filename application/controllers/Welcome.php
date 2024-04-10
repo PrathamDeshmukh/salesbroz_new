@@ -143,6 +143,39 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+    public function invoice_setting()
+	{
+		$page_data['page_name'] = 'invoice_setting';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function add_invoice(){
+		$table = 'invoice_data'; 
+		
+		if (count($_POST) > 0) {    
+            $post = $this->input->post();
+            $result = $this->CommonModal->insertdata($table,$post);
+			if($result) {
+				$this->session->set_flashdata('msg', 'Invoice Generate Successfully!!!!!');
+				$this->session->set_flashdata('msg_class', 'alert-success');
+				redirect(base_url("invoice_setting"));
+			}
+			else{
+				$this->session->set_flashdata('msg', 'Something went Wrong!!!!!!!!!');
+				$this->session->set_flashdata('msg_class', 'alert-danger');
+				redirect(base_url("invoice_setting"));
+			}
+		}
+		else{
+			$this->session->set_flashdata('msg', 'Invoice Generate Successfully!!!!');
+			$this->session->set_flashdata('msg_class', 'alert-success');
+			redirect(base_url("invoice_setting"));
+		}
+
+	}
+
+  
+
     public function my_purchase()
 	{
 		$page_data['page_name'] = 'my_purchase';

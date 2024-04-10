@@ -53,7 +53,8 @@
                     </div>
                     <div class="col-md-3 mb-4 stretch-card transparent">
                       
-                      <button type="button" class="btn btn-link btn-fw">+ New Invoices</button>
+                      <!-- <button type="button" class="btn btn-link btn-fw">+ New Invoices</button> -->
+                      <a class="btn btn-link btn-fw" href="<?php echo base_url();?>invoice_setting">+ New Invoices</a>
                     </div>
                   </div>
                 </div>
@@ -83,19 +84,19 @@
                         </tr>
                       </thead>
                       <tbody>
-                      <?php $customer = getAllRow('customer');
-                                                               if (!empty($customer)) {
-                                                      foreach ($customer as $customer_info) {
+                      <?php $sale_invoice = getAllRow('sale_invoice');
+                                                               if (!empty($sale_invoice)) {
+                                                      foreach ($sale_invoice as $sale_invoice_info) {
                                                                    ?>
                         <tr>
-                          <td><?=$customer_info['date']?></td>
-                          <td><?=$customer_info['invoice_no']?></td>
-                          <td><?=$customer_info['c_paid']?></td>
-                          <td><?=$customer_info['c_name']?></td>
-                          <td><?=$customer_info['c_phone']?></td>
-                          <td><?=$customer_info['c_amount']?></td>
-                          <td> <?=$customer_info['pending_amount']?></td>
-                          <td><?=$customer_info['pay_mode']?></td>
+                          <td><?=$sale_invoice_info['date']?></td>
+                          <td><?=$sale_invoice_info['invoice_no']?></td>
+                          <td><?=$sale_invoice_info['c_paid']?></td>
+                          <td><?=$sale_invoice_info['c_name']?></td>
+                          <td><?=$sale_invoice_info['c_phone']?></td>
+                          <td><?=$sale_invoice_info['c_amount']?></td>
+                          <td> <?=$sale_invoice_info['pending_amount']?></td>
+                          <td><?=$sale_invoice_info['pay_mode']?></td>
                           <td>
                           <button class="btn btn-outline-primary">ViewUpdate<br>Payments</button>
                           </td>

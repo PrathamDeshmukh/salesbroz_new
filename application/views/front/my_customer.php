@@ -59,18 +59,24 @@
                         </tr>
                       </thead>
                       <tbody>
-                      
+                      <?php $customer = getAllRow('customer');
+                                                               if (!empty($customer)) {
+                                                      foreach ($customer as $customer_info) {
+                                                                   ?>
                         <tr>
-                          <td>John Doe</td>
-                          <td>845697235</td>
-                          <td>Individual</td>
-                          <td>New York</td>
-                          <td>Apple</td>
+                        <td><?=$customer_info['name']?></td>
+                          <td><?=$customer_info['phone']?></td>
+                          <td><?=$customer_info['type']?></td>
+                          <td><?=$customer_info['city']?></td>
+                          <td><?=$customer_info['brand']?></td>
+                     
                           
                           <td><a href="#"><i class="fa fa-edit"></i>
                           <button class="btn btn-primary">Action</button>
                           </td>
                         </tr>
+                        <?php } 
+                                                             } ?>
             
                         
                       </tbody><br>

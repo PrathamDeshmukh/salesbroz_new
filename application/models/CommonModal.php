@@ -29,6 +29,7 @@ class CommonModal extends CI_Model
 			$insert_id = $this->db->insert_id();
 			return  $insert_id;
 	}
+   
     public function check_phone_exists($phone) {
         // Check if phone number exists in database
         $this->db->where('phone', $phone);
