@@ -218,6 +218,31 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+    public function scheme_dashboard()
+	{
+		$page_data['page_name'] = 'scheme_dashboard';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function add_your_scheme()
+	{
+		$page_data['page_name'] = 'add_your_scheme';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function my_earnings()
+	{
+		$page_data['page_name'] = 'my_earnings';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function my_retailer_type()
+	{
+		$page_data['page_name'] = 'my_retailer_type';
+		$this->load->view('front/template', $page_data);
+
+	}
+
 
 
 	
