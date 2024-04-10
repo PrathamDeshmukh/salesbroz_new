@@ -66,6 +66,10 @@ $route['sales_return'] = 'welcome/sales_return';
 $route['purchase_return'] = 'welcome/purchase_return';
 $route['my_customer'] = 'welcome/my_customer';
 $route['my_distributor'] = 'welcome/my_distributor';
+$route['scheme_dashboard'] = 'welcome/scheme_dashboard';
+$route['add_your_scheme'] = 'welcome/add_your_scheme';
+$route['my_earnings'] = 'welcome/my_earnings';
+$route['my_retailer_types'] = 'welcome/my_retailer_types';
 
 
 
