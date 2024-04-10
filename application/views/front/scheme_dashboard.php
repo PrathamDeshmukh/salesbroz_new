@@ -9,7 +9,7 @@
                    <div class="card-body">
                      <h4 class="card-title">2043</h4>
                      <div class="d-flex justify-content-between">
-                       <p class="text-muted">Total Eligible Schemes</p>
+                       <h4 class="text-muted">Total Eligible Schemes</h4>
                        <img src="assets/images/icon/cart.png" style="height: 50px; width: 50px;">
                      </div>
                    </div>
@@ -20,7 +20,7 @@
                    <div class="card-body">
                      <h4 class="card-title">₹0</h4>
                      <div class="d-flex justify-content-between">
-                       <p class="text-muted">Total Scheme Earnings</p>
+                       <h4 class="text-muted">Total Scheme Earnings</h4>
                        <img src="assets/images/icon/pending.png" style="height: 50px; width: 50px;">
                      </div>   
                    </div>
@@ -31,7 +31,7 @@
                    <div class="card-body">
                      <h4 class="card-title">₹0</h4>
                      <div class="d-flex justify-content-between">
-                       <p class="text-muted">Total Sellin Amount</p>
+                       <h4 class="text-muted">Total Sellin Amount</h4>
                        <img src="assets/images/icon/amount.png" style="height: 50px; width: 50px;">
                      </div>
                    </div>
@@ -42,7 +42,7 @@
                    <div class="card-body">
                      <h4 class="card-title">₹0</h4>
                      <div class="d-flex justify-content-between">
-                       <p class="text-muted">Total SellOut Amount</p>
+                       <h4 class="text-muted">Total SellOut Amount</h4>
                        <img src="assets/images/icon/rupee.png" style="height: 50px; width: 50px;">
                      </div>
                    </div>
@@ -57,7 +57,7 @@
                      <ol class="breadcrumb">
                      <img src="assets/images/icon/setting.png" style="height: 50px; width: 50px; padding-right: 5px;">
                        <li class="breadcrumb-item"><a href="#"><h4 style="padding-top: 15px;">SCHEME CALCULATIONS</h4></a></li>
-                       <p>See your Scheme Earnings based on your Purchases, Sales & Activations</p>
+                       <li>See your Scheme Earnings based on your Purchases, Sales & Activations</li>
                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block">View Scheme Calculations  ></button>
                      </ol>
                    </nav>
