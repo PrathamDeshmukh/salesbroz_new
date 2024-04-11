@@ -373,6 +373,21 @@
         </ul>
       </div>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="editors">
+        <i class="icon-book menu-icon"></i>
+        <span class="menu-title">Schemes Mgmt</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-advanced">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>scheme_dashboard">Schemes Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>add_your_scheme">Add Your Schemes</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>my_earnings">My Earnings</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>my_retailer_types">My Retailer Types</a></li>
+        </ul>
+      </div>
+    </li>
    
    
     
