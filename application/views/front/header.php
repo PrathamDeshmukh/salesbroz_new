@@ -298,6 +298,12 @@
       </a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="<?php echo base_url();?>my_employee">
+        <i class="icon-grid menu-icon"></i>
+        <span class="menu-title">My Employee</span>
+      </a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="<?php echo base_url();?>my_sales">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Sales</span>
