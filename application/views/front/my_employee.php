@@ -9,21 +9,16 @@
         <div class="row">
           <div class="col-md-12 grid-margin transparent">
               <div class="row">
-                <div class="col-md-5 mb-4  transparent">
+                <div class="col-md-6 mb-4  transparent">
                   <h2 class="font-weight-bold">All Employees</h2>
                 </div>
-                
-
-                <div class="col-md-7 mb-2 ml-2 transparent">
+                <div class="col-md-6 mb-4  transparent">
+                <!-- <button type="button" class="btn btn-primary float-end">Add Employee</button> -->
+                <a class="btn btn-primary float-end" href="<?php echo base_url();?>add_employee">Add Employee</span></a>
                
-                  <!-- <input  type="text" class="form-control" name="tags" id="tags" value="Arvind" />
                 </div>
-                <div class="col-md-2 mb-1  justify-content-end transparent">
-                  <button type="button" class="btn btn-primary float-end">Filter</button>
-                </div>
-                <div class="col-md-2 mb-1 justify-content-end transparent">
-                  <button type="button" class="btn btn-primary float-end">Download</button> -->
-                </div>
+
+               
               </div>
             </div>
             
@@ -42,9 +37,16 @@
                           <th>Employee ID</th>
                           <th>Name</th>
                           <th>Contact</th>
+                          <th>Password</th>
                           <th>Age</th>
-                          <th>Date of Birth</th>
+                          <th>Adhar Number</th>
                           <th>Address</th>
+                          <th>Sale <br>Permission</th>
+                          <th>Purchases <br> Permission</th>
+                          <th>Create At</th>
+                          <th>Update At</th>
+                          <th>Sale Action</th>
+                          <th>Purchase Action</th>
                          
                         </tr>
                       </thead>
@@ -57,9 +59,21 @@
                           <td><?=$employee_info['id']?></td>
                           <td><?=$employee_info['e_name']?></td>
                           <td><?=$employee_info['e_phone']?></td>
+                          <td><?=$employee_info['password']?></td>
                           <td><?=$employee_info['e_age']?></td>
-                          <td><?=$employee_info['e_dob']?></td>
+                          <td><?=$employee_info['adhar_no']?></td>
+                          
                           <td><?=$employee_info['e_address']?></td>
+                          <td><?=$employee_info['sale_permission']?></td>
+                          <td><?=$employee_info['purchase_permission']?></td>
+                          <td><?=$employee_info['create_at']?></td>
+                          <td><?=$employee_info['update_at']?></td>
+                          <td><a class="btn btn-primary float-end" href="<?php echo base_url();?>add_employee">Sale Allow</span></a>
+                          
+                        </td>
+                        <td><a class="btn btn-primary float-end" href="<?php echo base_url();?>add_employee">Purchase Allow</span></a>
+                          
+                        </td>
                         
                         </tr>
                         <?php } 
