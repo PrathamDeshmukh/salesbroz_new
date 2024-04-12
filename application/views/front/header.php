@@ -345,21 +345,7 @@
         </ul>
       </div>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-        <i class="icon-bar-graph menu-icon"></i>
-        <span class="menu-title">Stocks MGMT</span>
-        <i class="menu-arrow"></i>
-      </a>
-      <div class="collapse" id="charts">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="../charts/chartjs.html">My Stock</a></li>
-          <li class="nav-item"> <a class="nav-link" href="../charts/morris.html">Stock Audit</a></li>
-          <li class="nav-item"> <a class="nav-link" href="../charts/flot-chart.html">Add Your Models</a></li>
-         
-        </ul>
-      </div>
-    </li>
+    
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="editors">
         <i class="icon-book menu-icon"></i>
