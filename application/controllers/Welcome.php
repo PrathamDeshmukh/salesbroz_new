@@ -218,6 +218,59 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+
+	public function add_employee()
+	{
+		$page_data['page_name'] = 'add_employee';
+		$this->load->view('front/template', $page_data);
+
+	}
+	public function add_employee_detail()
+	{
+		$post = $this->input->post();
+        if ($post) {
+             $pass = $post['password'];
+             $c_pass = $post['c_pass'];
+             if($pass === $c_pass){
+                $password = $pass;
+                
+               
+                $data = array(
+                    'e_name' =>$post['e_name'],
+                    'password' => $password,
+                    'e_phone' => $post['e_phone'],
+                    'e_age' => $post['e_age'],
+                    'adhar_no' => $post['e_phone'],
+                    'sale_permission' => $post['sale_permission'],
+                    'purchase_permission' => $post['purchase_permission'],
+                );
+                // Insert user into database
+
+                //  print_r($data);
+                //  exit();
+                $this->load->model('CommonModal');
+                 $pst = $this->CommonModal->insertdata('employee',$data);
+
+                 if( $pst){
+
+                    $this->session->set_flashdata('msg', 'Data Insertes Succesfully!!!');
+                    $this->session->set_flashdata('msg_class', 'alert-success');
+                     redirect(base_url('my_employee'));
+                 }
+                 else{
+                    $this->session->set_flashdata('msg', 'something went wrong !!!');
+                    $this->session->set_flashdata('msg_class', 'alert-danger');
+                     redirect(base_url('my_employee'));
+                 }
+             }
+        else{
+            $this->session->set_flashdata('msg', 'Password Doest Match !!!');
+           $this->session->set_flashdata('msg_class', 'alert-danger');
+            redirect(base_url('my_employee'));
+        }
+   }
+	}
+
     public function scheme_dashboard()
 	{
 		$page_data['page_name'] = 'scheme_dashboard';
@@ -261,7 +314,6 @@ class Welcome extends CI_Controller {
 
 	}
     
-
 
 
 

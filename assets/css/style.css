@@ -28444,7 +28444,7 @@ select.asColorPicker-input {
   padding: 0.4375rem 0.75rem;
   border: 0;
   outline: 1px solid #CED4DA;
-  color: #c9c8c8;
+  color: black;
 }
 
 select.form-control:focus,
