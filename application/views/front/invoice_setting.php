@@ -310,7 +310,7 @@
                       </div>
                       <div class="col-md-6">
                       <div class="form-group">
-                        <label for="exampleInputUsername1">UIP Id:</label>
+                        <label for="exampleInputUsername1">UPI Id:</label>
                         <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
                       </div>
                        
@@ -334,8 +334,7 @@
     </div>
     <!-- page-body-wrapper ends -->
   </div>
-  <!-- container-scroller -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
     <script>
         document.getElementById('product-btn').addEventListener('click', function() {
             document.getElementById('product-section').style.display = 'block';
