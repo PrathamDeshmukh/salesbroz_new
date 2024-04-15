@@ -68,7 +68,8 @@
                       <li class="page-item"><a class="page-link" href="#">Today</a></li>
                     </ul>
                   </nav>
-                    </div><div class="row">
+                    </div>
+                    <div class="row">
                     <div class="col-md-6 mb-4 stretch-card transparent">
                     <h6>Showing Purchases Data till <b>Mar 1,2024 - Mar 31,2024</b>(ARVIND)</h6>
                     </div>

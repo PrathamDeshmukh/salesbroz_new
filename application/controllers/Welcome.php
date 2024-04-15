@@ -242,6 +242,26 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+    public function ledger()
+	{
+		$page_data['page_name'] = 'ledger';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function IMEI_tracker()
+	{
+		$page_data['page_name'] = 'IMEI_tracker';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function price_drops()
+	{
+		$page_data['page_name'] = 'price_drops';
+		$this->load->view('front/template', $page_data);
+
+	}
+    
+
 
 
 

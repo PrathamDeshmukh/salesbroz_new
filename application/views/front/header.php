@@ -333,6 +333,24 @@
       </div>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="<?php echo base_url();?>ledger">
+        <i class="icon-grid menu-icon"></i>
+        <span class="menu-title">Ledger</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<?php echo base_url();?>IMEI_tracker">
+        <i class="icon-grid menu-icon"></i>
+        <span class="menu-title">IMEI Tracker</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<?php echo base_url();?>price_drops">
+        <i class="icon-grid menu-icon"></i>
+        <span class="menu-title">Price Drops</span>
+      </a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
         <i class="icon-book menu-icon"></i>
         <span class="menu-title">My Returns</span>

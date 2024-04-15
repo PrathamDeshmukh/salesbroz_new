@@ -8,8 +8,8 @@
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
                   <h2 class="font-weight-bold">Invoice Setting</h2><br>
-                  <button type=" button " hidden id="product-btn" class="btn btn-primary ">Purchase Invoice Setting</button>
-                  <button type="button" hidden id="sale-btn" class="btn btn-primary active ">Sales Invoice Setting</button>
+                  <button type=" button "  id="product-btn" class="btn btn-primary ">Purchase Invoice Setting</button>
+                  <button type="button"  id="sale-btn" class="btn btn-primary active ">Sales Invoice Setting</button>
               
                 </div>
                

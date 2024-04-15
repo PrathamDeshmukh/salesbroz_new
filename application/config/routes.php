@@ -72,6 +72,9 @@ $route['scheme_dashboard'] = 'welcome/scheme_dashboard';
 $route['add_your_scheme'] = 'welcome/add_your_scheme';
 $route['my_earnings'] = 'welcome/my_earnings';
 $route['my_retailer_type'] = 'welcome/my_retailer_type';
+$route['ledger'] = 'welcome/ledger';
+$route['IMEI_tracker'] = 'welcome/IMEI_tracker';
+$route['price_drops'] = 'welcome/price_drops';
 
 
 
