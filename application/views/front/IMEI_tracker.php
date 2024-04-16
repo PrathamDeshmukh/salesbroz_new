@@ -258,9 +258,15 @@
     </div>
     <!-- page-body-wrapper ends -->
   </div>
+<<<<<<< HEAD
   <!-- container-scroller -->
    <script>
         document.getElementById('all-btn').addEventListener('click', function() {
+=======
+ 
+    <script>
+        document.getElementById('all-section-btn').addEventListener('click', function() {
+>>>>>>> f103ddefc88e401eb3a06bc82b08f25aa46e4a13
             document.getElementById('all-section').style.display = 'block';
             document.getElementById('activated-section').style.display = 'none';
             document.getElementById('in-section').style.display = 'none';
