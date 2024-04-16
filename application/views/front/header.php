@@ -298,6 +298,21 @@
       </a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="editors">
+        <i class="icon-book menu-icon"></i>
+        <span class="menu-title">Stocks Mgmt</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="auth">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>my_stock">My Stocks</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>stock_audit">Stocks Audit</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>add_your_model">Add your Models</a></li>
+        </ul>
+      </div>
+    </li>
+   
+    <li class="nav-item">
       <a class="nav-link" href="<?php echo base_url();?>my_employee">
         <i class="icon-grid menu-icon"></i>
         <span class="menu-title">My Employee</span>

@@ -313,6 +313,24 @@ class Welcome extends CI_Controller {
 		$this->load->view('front/template', $page_data);
 
 	}
+    public function my_stock()
+	{
+		$page_data['page_name'] = 'my_stock';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function stock_audit()
+	{
+		$page_data['page_name'] = 'stock_audit';
+		$this->load->view('front/template', $page_data);
+
+	}
+    public function add_your_model()
+	{
+		$page_data['page_name'] = 'add_your_model';
+		$this->load->view('front/template', $page_data);
+
+	}
     
 
 

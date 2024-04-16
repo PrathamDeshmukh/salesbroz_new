@@ -77,6 +77,9 @@ $route['my_retailer_type'] = 'welcome/my_retailer_type';
 $route['ledger'] = 'welcome/ledger';
 $route['IMEI_tracker'] = 'welcome/IMEI_tracker';
 $route['price_drops'] = 'welcome/price_drops';
+$route['my_stock'] = 'welcome/my_stock';
+$route['stock_audit'] = 'welcome/stock_audit';
+$route['add_your_model'] = 'welcome/add_your_model';
 
 
 
