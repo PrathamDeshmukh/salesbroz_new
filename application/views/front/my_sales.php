@@ -6,7 +6,7 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-6 mb-4 stretch-card transparent">
-                    <input  type="text" class="form-control p-2" name="tags" id="tags" value="Arvind" />
+                    <input  type="text" class="form-control p-2" name="tags" id="tags" value="" />
                     </div>
                     
                   </div>

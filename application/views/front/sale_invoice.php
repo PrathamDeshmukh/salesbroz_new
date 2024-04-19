@@ -17,7 +17,7 @@
                 <div class="col-md-7 mb-2 ml-2 transparent">
                 <div class="row">
                     <div class="col-md-6 mb-4  stretch-card transparent">
-                    <input  type="text" class="form-control p-2" name="tags" id="tags" value="Arvind" />
+                    <input  type="text" class="form-control p-2" name="tags" id="tags" value="" />
                     </div>
                     <div class="col-md-2 mb-4 stretch-card transparent">
                     <button type="button" class="btn btn-primary float-end">Filter</button>
