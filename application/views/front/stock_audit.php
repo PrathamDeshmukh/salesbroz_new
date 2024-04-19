@@ -29,159 +29,42 @@
           </div>
           <div class="row">
             <div class="col-md-12 grid-margin">
-            <?php if ($msg = $this->session->flashdata('msg')):
-                                  $msg_class = $this->session->flashdata('msg_class') ?>
-                                  <div class="row">
-                                <div class="col-lg-6" >
-                                   <div class="alert  <?= $msg_class; ?>"style="width: 460px;"><?= $msg; ?></div>
-                               </div>
-                                     </div>
-                                       <?php
-                                        $this->session->unset_userdata('msg');
-                                       endif; ?>
-					
-					
-              
               <div class="row">
                 <div class="col-12 col-xl-12 mb-4 mb-xl-0">
                 <div id="stock-section">
-                    <!-- Product table will be loaded here -->
                     <div class="card">
-                <div class="card-body">
-                
-                  <form class="form-sample" action="<?php echo base_url() ?>Welcome/add_invoice" method="post"
-                                enctype="multipart/form-data">
-                  <h3 class="card-description"> Personal info</h3>
-                     
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Series No:</label>
-                        <input type="text" name="series_no" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        <p class="col-form-label"> is your latest invoice number as per your invoice records.</p>
-                         
-                      </div>
-                       
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Challan Serial:</label>
-                        <input type="text" name="challan_no" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                       
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Business Phone Number:</label>
-                        <input type="text" name="phone" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                    </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Business Email:</label>
-                        <input type="email" name="email" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Your terms and condition. This will be visible on all invoices you generate</label>
-                        <input type="text" name="terms_condition"class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                       
-                      </div>
-                     
-                    </div>
-                    <div class="row">
-                      
-                      <div class="col-md-12">
-                        <div class="form-group row">
-                             <div class="col-sm-4">
-                            <div class="form-check">
-                              <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                Send SMS invoice copy to Customer
-                              </label>
-                            </div>
-                          </div>
-                          
-                        </div>
-                        <div class="form-group row">
-                          
-                          <div class="col-sm-4">
-                            <div class="form-check">
-                              <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                Send SMS invoice copy to self
-                              </label>
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="card-description"> Bank Details</h3>
+                    <div class="table-responsive">
+                    <table class="table table-striped table-borderless">
                     
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Account Holder Name:</label>
-                        <input type="text" name="account_holder_name" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                     
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Account No:</label>
-                        <input type="text" name="account_no"  class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                      </div>
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>imei</th>
+                          <th>Purchase Price</th>
+                          <th>Sell In Date</th>
+                          <th>Move to </th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                  
+                      </tbody>
                       
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">IFSC Code:</label>
-                        <input type="text" name="ifsc_code"class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                      
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Bank Name:</label>
-                        <input type="text" name="Bank_name" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                      
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Branch Name:</label>
-                        <input type="text" name="Branch_name" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                        
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">UIP Id:</label>
-                        <input type="text" name="upi_id" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                       
-                      </div>
-                      
-                    </div>
-                    <button type="submit" id="product-btn" class="submit-button btn btn-primary ">Purchase Invoice Setting</button>
-                
                     
-                   
-                  </form>
-                </div>
+                      </table>                  
+                    <nav>
+                    <ul class="pagination flex-wrap">
+                      <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-left"></i></a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-right"></i></a></li>
+                    </ul>
+                  </nav>
+                  </div>
+                
+
               </div>
                 </div> </div>
                
@@ -194,143 +77,39 @@
               
               <div class="row">
                 <div class="col-12 col-xl-12 mb-4 mb-xl-0">
-                <div id="adjusted-section" style="display: none;">
-                    <!-- Sale table will be loaded here -->
-                    
+                <div id="adjusted-section" style="display: none;">                    
                     <div class="card">
-                <div class="card-body">
-                
-                  <form class="form-sample" action="<?php echo base_url('welcome/addinvoice') ?>" method="post"
-                                enctype="multipart/form-data">
-                  <h3 class="card-description"> Personal info</h3>
-                     
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Series No:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        <p class="col-form-label"> is your latest invoice number as per your invoice records.</p>
-                         
-                      </div>
-                       
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Challan Serial:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                       
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Business Phone Number:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                    </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Business Email:</label>
-                        <input type="email" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Your terms and condition. This will be visible on all invoices you generate</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                        </div>
-                       
-                      </div>
-                     
-                    </div>
-                    <div class="row">
-                      
-                      <div class="col-md-12">
-                        <div class="form-group row">
-                             <div class="col-sm-4">
-                            <div class="form-check">
-                              <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                Send SMS invoice copy to Customer
-                              </label>
-                            </div>
-                          </div>
-                          
-                        </div>
-                        <div class="form-group row">
-                          
-                          <div class="col-sm-4">
-                            <div class="form-check">
-                              <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                Send SMS invoice copy to self
-                              </label>
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="card-description"> Bank Details</h3>
+                    <div class="table-responsive">
+                    <table class="table table-striped table-borderless">
                     
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Account Holder Name:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                     
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Account No:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                      </div>
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>imei</th>
+                          <th>Purchase Price</th>
+                          <th>Sell In Date</th>
+                          <th>Move to </th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                  
+                      </tbody>
                       
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">IFSC Code:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                      
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Bank Name:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                      
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Branch Name:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                        
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">UPI Id:</label>
-                        <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" >
-                      </div>
-                       
-                      </div>
-                      
-                    </div>
                     
-                   
-                  </form>
-                </div>
+                      </table>                  
+                    <nav>
+                    <ul class="pagination flex-wrap">
+                      <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-left"></i></a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-right"></i></a></li>
+                    </ul>
+                  </nav>
+                  </div>
+                
               </div>
                 </div>
                
@@ -348,16 +127,16 @@
     <script>
         document.getElementById('stock-btn').addEventListener('click', function() {
             document.getElementById('stock-section').style.display = 'block';
-            document.getElementById('sale-section').style.display = 'none';
+            document.getElementById('adjusted-section').style.display = 'none';
             document.getElementById('stock-btn').classList.add('active');
-            document.getElementById('sale-btn').classList.remove('active');
+            document.getElementById('adjusted-btn').classList.remove('active');
         });
 
-        document.getElementById('sale-btn').addEventListener('click', function() {
+        document.getElementById('adjusted-btn').addEventListener('click', function() {
             document.getElementById('stock-section').style.display = 'none';
-            document.getElementById('sale-section').style.display = 'block';
+            document.getElementById('adjusted-section').style.display = 'block';
             document.getElementById('stock-btn').classList.remove('active');
-            document.getElementById('sale-btn').classList.add('active');
+            document.getElementById('adjusted-btn').classList.add('active');
         });
     </script>
 </body>
