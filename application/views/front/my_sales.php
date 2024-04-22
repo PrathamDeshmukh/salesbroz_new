@@ -89,6 +89,23 @@
                           <th>See more</th>
                         </tr>
                       </thead>
+                      <tbody>
+                      <?php $MySale = getAllRow('MySale');
+                                                               if (!empty($MySale)) {
+                                                      foreach ($MySale as $MySale_info) {
+                                                                   ?>
+                        <tr>
+                          <td><?=$MySale_info['brand']?></td>
+                          <td><?=$MySale_info['total_value']?></td>
+                          <td><?=$MySale_info['total_count']?></td>
+                          <td>
+                          <button class="btn btn-outline-primary">see more</button>
+                          </td>
+                
+                        </tr>
+                        <?php } 
+                                                             } ?>
+                      </tbody>
                     </table>
                   </div>
                 </div>

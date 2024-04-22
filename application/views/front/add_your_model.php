@@ -61,25 +61,27 @@
                         </tr>
                       </thead>
                       <tbody>
+                      <tbody>
+                      <?php $AddYourModel = getAllRow('AddYourModel');
+                                                               if (!empty($AddYourModel)) {
+                                                      foreach ($AddYourModel as $AddYourModel_info) {
+                                                                   ?>
                         <tr>
-                          <td>Samsung</td>
-                          <td>S24 ultra</td>
-                          <td>Black</td>
-                          <td>102000₹</td>
-                          <td>1022000₹</td>
-                          <td>1025000₹</td>
-                          <td>-</td>
+                          <td><?=$AddYourModel_info['brand']?></td>
+                          <td><?=$AddYourModel_info['model']?></td>
+                          <td><?=$AddYourModel_info['colour']?></td>
+                          <td><?=$AddYourModel_info['dp']?></td>
+                          <td><?=$AddYourModel_info['mop']?></td>
+                          <td><?=$AddYourModel_info['mrp']?></td>
+                          <td>
+                          <button class="btn btn-outline-primary">View</button>
+                          </td>
+                
                         </tr>
-                        <tr>
-                          <td>Apple</td>
-                          <td>iphone 14pro</td>
-                          <td>Golden</td>
-                          <td>103000₹</td>
-                          <td>1032000₹</td>
-                          <td>1035000₹</td>
-                          <td>-</td>
-                        </tr>
+                        <?php } 
+                                                             } ?>
                       </tbody>
+                        
                     </table>
                     
                     <nav>

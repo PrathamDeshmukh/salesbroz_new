@@ -46,11 +46,26 @@
                           
                         </tr>
                       </thead>
+  
                       <tbody>
-                  
+                      <?php $StockAuditStock = getAllRow('StockAuditStock');
+                                                               if (!empty($StockAuditStock)) {
+                                                      foreach ($StockAuditStock as $StockAuditStock_info) {
+                                                                   ?>
+                        <tr>
+                          <td><?=$StockAuditStock_info['name']?></td>
+                          <td><?=$StockAuditStock_info['imei']?></td>
+                          <td><?=$StockAuditStock_info['p_price']?></td>
+                          <td><?=$StockAuditStock_info['sell_date']?></td>
+                          <td>
+                          <button class="btn btn-outline-primary">move</button>
+                          </td>
+                
+                        </tr>
+                        <?php } 
+                                                             } ?>
                       </tbody>
-                      
-                    
+                  
                       </table>                  
                     <nav>
                     <ul class="pagination flex-wrap">
@@ -63,9 +78,7 @@
                     </ul>
                   </nav>
                   </div>
-                
-
-              </div>
+                </div>
                 </div> </div>
                
               </div>
@@ -93,10 +106,23 @@
                         </tr>
                       </thead>
                       <tbody>
-                  
+                      <?php $StockAuditAdjust = getAllRow('StockAuditAdjust');
+                                                               if (!empty($StockAuditAdjust)) {
+                                                      foreach ($StockAuditAdjust as $StockAuditAdjust_info) {
+                                                                   ?>
+                        <tr>
+                          <td><?=$StockAuditAdjust_info['name']?></td>
+                          <td><?=$StockAuditAdjust_info['imei']?></td>
+                          <td><?=$StockAuditAdjust_info['p_price']?></td>
+                          <td><?=$StockAuditAdjust_info['sell_date']?></td>
+                          <td>
+                          <button class="btn btn-outline-primary">move</button>
+                          </td>
+                
+                        </tr>
+                        <?php } 
+                                                             } ?>
                       </tbody>
-                      
-                    
                       </table>                  
                     <nav>
                     <ul class="pagination flex-wrap">

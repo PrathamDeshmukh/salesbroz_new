@@ -90,6 +90,23 @@
                           <th>See more</th>
                         </tr>
                       </thead>
+                      <tbody>
+                      <?php $MyPurchase = getAllRow('MyPurchase');
+                                                               if (!empty($MyPurchase)) {
+                                                      foreach ($MyPurchase as $MyPurchase_info) {
+                                                                   ?>
+                        <tr>
+                          <td><?=$MyPurchase_info['brand']?></td>
+                          <td><?=$MyPurchase_info['total_value']?></td>
+                          <td><?=$MyPurchase_info['total_count']?></td>
+                          <td>
+                          <button class="btn btn-outline-primary">see more</button>
+                          </td>
+                
+                        </tr>
+                        <?php } 
+                                                             } ?>
+                      </tbody>
                     </table>
                   </div>
                 </div>

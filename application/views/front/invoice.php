@@ -145,6 +145,23 @@
                           <th class="border-bottom pb-2">Invoice Url</th>
                         </tr>
                       </thead>
+                      <tbody>
+                      <?php $InoiceDashboardPurchase = getAllRow('InoiceDashboardPurchase');
+                                                               if (!empty($InoiceDashboardPurchase)) {
+                                                      foreach ($InoiceDashboardPurchase as $InoiceDashboardPurchase_info) {
+                                                                   ?>
+                        <tr>
+                          <td><?=$InoiceDashboardPurchase_info['invoice_no']?></td>
+                          <td><?=$InoiceDashboardPurchase_info['invoice_date']?></td>
+                          <td><?=$InoiceDashboardPurchase_info['brand']?></td>
+                          <td>
+                          <button class="btn btn-outline-primary">Download</button>
+                          </td>
+                
+                        </tr>
+                        <?php } 
+                                                             } ?>
+                      </tbody>
         
                     </table>
                   </div>
@@ -167,6 +184,23 @@
                           <th class="border-bottom pb-2">Invoice Url</th>
                         </tr>
                       </thead>
+                      <tbody>
+                      <?php $InoiceDashboardSale = getAllRow('InoiceDashboardSale');
+                                                               if (!empty($InoiceDashboardSale)) {
+                                                      foreach ($InoiceDashboardSale as $InoiceDashboardSale_info) {
+                                                                   ?>
+                        <tr>
+                          <td><?=$InoiceDashboardSale_info['invoice_no']?></td>
+                          <td><?=$InoiceDashboardSale_info['invoice_date']?></td>
+                          <td><?=$InoiceDashboardSale_info['brand']?></td>
+                          <td>
+                          <button class="btn btn-outline-primary">Download</button>
+                          </td>
+                
+                        </tr>
+                        <?php } 
+                                                             } ?>
+                      </tbody>
         
                     </table>
                   </div>
